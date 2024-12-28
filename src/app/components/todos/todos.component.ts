@@ -155,6 +155,6 @@ export class TodosComponent {
   
   
   toggleCompletion(id: string) {
-    this.todoService.toggleTodo(id);
+    this.todoService.toggleCompletion(id);
   }
 }

@@ -23,7 +23,7 @@ export class TodoService {
   removeTodo(id: string) {
     this.todos.update((prev) => prev.filter((todo) => todo.id !== id));
   }
-  toggleTodo(id: string) {
+  toggleCompletion(id: string) {
     this.todos.update((prev) =>
       prev.map((todo) =>
         todo.id === id ? { ...todo, isCompleted: !todo.isCompleted } : todo
