@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { CounterComponent } from './components/counter/counter.component';
+import { TodosComponent } from './components/todos/todos.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, CounterComponent, TodosComponent],
   template: `
-    <h1>Welcome to {{title}}!</h1>
-
+    <!-- <app-counter /> -->
+    <app-todos />
     <router-outlet />
   `,
   styles: [],
